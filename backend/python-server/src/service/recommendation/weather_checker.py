@@ -21,7 +21,7 @@ class WeatherChecker:
     
     def get_weather_message(self, main_condition: str) -> str:
         """
-        날씨별 적절한 메시지를 생성합니다.
+        날씨별 적절한 메시지를 생성합니다. 
         """
         messages = {
             "Rain": "현재 비가 내리고 있어요. ☔ 외출하실 때 우산 꼭 챙기세요!",
