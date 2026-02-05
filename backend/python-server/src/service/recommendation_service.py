@@ -27,7 +27,7 @@ class RecommendationService:
         # 사용자의 chat_session 생성
         user_id = UserRepository.get_id_by_uuid(user_uuid)
         thread_id = str(uuid4())
-        ChatSessionRepository.save(user_id, thread_id=str(uuid4()))
+        ChatSessionRepository.save(user_id, thread_id)
 
         # 날씨 정보 획득
         weather_data, init_message = await self.weather_checker.generate_init_message(lat, lon)
