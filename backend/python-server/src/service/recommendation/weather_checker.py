@@ -29,7 +29,7 @@ class WeatherChecker:
             "Clear": "날씨가 매우 맑습니다. ☀️ 기분 좋게 산책하기 딱 좋은 날이에요."
         }
 
-        return messages.get("main_condition", "산책하기 참 쾌적한 날씨입니다. 🌿")
+        return messages.get(main_condition, "산책하기 참 쾌적한 날씨입니다. 🌿")
     
     async def generate_init_message(self, lat: float, lon: float) -> Tuple[dict, str]:
         """
